@@ -1,9 +1,23 @@
 .app_cursor {
     z-index: 1000;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    border: 1px solid goldenrod;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    outline: none;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+}
+
+.secondary_cursor {
+    z-index: 1000;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #333;
+    outline: none;
     pointer-events: none;
     overflow: hidden;
     transform: translate3d(0, 0, 0);

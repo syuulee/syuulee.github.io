@@ -1,20 +1,83 @@
 import React from 'react';
-import './main.scss'
+import './main.scss';
 import './Cursor.scss';
 
 const Cursor = () => {
     const cursorRef = React.useRef(null);
+    const secondaryCursor = React.useRef(null);
+
+    const positionRef = React.useRef({
+        mouseX: 0,
+        mouseY: 0,
+        destinationX: 0,
+        destinationY: 0,
+        distanceX: 0,
+        distanceY: 0,
+        key: -1,
+    });
 
     React.useEffect(() => {
         document.addEventListener('mousemove', (event) => {
             const { clientX, clientY } = event;
-            const mouseX = clientX - cursorRef.current.clientWidth / 2;
-            const mouseY = clientY - cursorRef.current.clientHeight / 2;
+
+            const mouseX = clientX;
+            const mouseY = clientY;
+
+            positionRef.current.mouseX =
+                mouseX - secondaryCursor.current.clientWidth / 2;
+            positionRef.current.mouseY =
+                mouseY - secondaryCursor.current.clientHeight / 2;
+
             cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
         });
+
+        return () => {};
     }, []);
 
-    return <div className='app_cursor' ref={cursorRef} />;
+    React.useEffect(() => {
+        const followMouse = () => {
+            positionRef.current.key = requestAnimationFrame(followMouse);
+
+            const {
+                mouseX,
+                mouseY,
+                destinationX,
+                destinationY,
+                distanceX,
+                distanceY,
+            } = positionRef.current;
+
+            if (!destinationX | !destinationY) {
+                positionRef.current.destinationX = mouseX;
+                positionRef.current.destinationY = mouseY;
+            } else {
+                positionRef.current.distanceX = (mouseX - destinationX) * 0.01;
+                positionRef.current.distanceY = (mouseY - destinationY) * 0.01;
+
+                if (
+                    Math.abs(positionRef.current.distanceX) +
+                        Math.abs(positionRef.current.distanceY) <
+                    0.1
+                ) {
+                    positionRef.current.destinationX = mouseX;
+                    positionRef.current.destinationY = mouseY;
+                } else {
+                    positionRef.current.destinationX += distanceX;
+                    positionRef.current.destinationY += distanceY;
+                }
+            }
+            secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px,0 )`;
+        };
+
+        followMouse();
+    });
+
+    return (
+        <div>
+            <div className='app_cursor' ref={cursorRef} />
+            <div className='secondary_cursor' ref={secondaryCursor} />
+        </div>
+    );
 };
 
 export default Cursor;

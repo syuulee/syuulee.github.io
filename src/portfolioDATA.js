@@ -1,20 +1,96 @@
 const profile = {
-    name: "leeseoyu",
-    email: "yuyu00lee@gmail.com",
-    tel: "010-8751-1235"
-}
+    name: 'leeseoyu',
+    email: 'yuyu00lee@gmail.com',
+    tel: '010-8751-1235',
+};
 
-export { profile }
+export { profile };
 
 const portfolio = [
-    { id: 1, title: "오설록", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#198754", "#333", "tomato"], skill: ["HTML", "css", "JQuery"], src: process.env.PUBLIC_URL + "/assets/img/osulloc.png", link: "https://desipossa.github.io/", anchor: "오설록" },
-    { id: 2, title: "더플라자호텔", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "더플라자호텔" },
-    { id: 3, title: "솔트레인", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "솔트레인" },
-    { id: 4, title: "빅마우스", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "빅마우스" },
-    { id: 5, title: "서울아산병원", type: "Responsive Web", font: ["Noto Sans Korean", "어쩌고"], info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "서울아산병원" },
-    { id: 6, title: "국립발레단", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "국립발레단" },
-    { id: 7, title: "국립발레단", type: "Responsive Web", font: "Noto Sans Korean", info: "브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.", color: ["#369", "#f00", "tomato"], skill: ["react", "react-router-dom", "axios", "redux-tollkit"], src: process.env.PUBLIC_URL + "/assets/img/ndg.jpg", link: "http://desipossa.github.io/", anchor: "국립발레단" },
+    {
+        id: 1,
+        title: '국립발레단',
+        type: 'React Web',
+        font: 'Pretendard',
+        info: '국립발레단의 원래 로고와 이미지들을\n사용하여 디자인 했습니다.\n기본적으로는 무채색을 사용하여 무게를 잡아줬고,\n국립발레단의 색을 상징적 요소로 사용했습니다.\n react-router-dom를 사용해서 연결되는 웹페이지를 디자인했습니다..',
+        color: ['#975051', '#333'],
+        skill: ['react', 'react-router-dom'],
+        src: process.env.PUBLIC_URL + '/assets/img/knb.png',
+        link: 'https://syuulee.github.io/react_tast_3/',
+        anchor: '국립발레단',
+    },
+    {
+        id: 2,
+        title: '서울아산병원',
+        type: 'React Web',
+        font: 'Pretendard',
+        info: '서울아산병원의 원래 로고와 사용된 색을\n참고하여 디자인했습니다.\n병원이라는 곳의 특성을 살려서 신뢰성을 주기 위해 필요한 정보들을 전반부에 배치하였습니다.\n사이트를 전체적으로 타이포그라피와 색을 사용해서 디자인했습니다.',
+        color: ['#ee8824', '#0e787c', '#ddd', '#f1f1f1', '#333'],
+        skill: ['react', 'Slick'],
+        src: process.env.PUBLIC_URL + '/assets/img/asanhospital.png',
+        link: 'https://syuulee.github.io/react_tast_2/',
+        anchor: '서울아산병원',
+    },
+    {
+        id: 3,
+        title: '솔트레인',
+        type: 'Responsive Web',
+        font: 'Noto Sans Korean, Montserrat',
+        info: '치약브랜드인 만큼 클린한 느낌을 주려고 미니멀하게 디자인했습니다.\n치약과 다르게 힙한 느낌도 받을 수 있습니다.\n전체적으로 무채색을 기본으로 하고, 솔트레인의 로고색을 사용해서 브랜드 아이덴티티를 살렸습니다.\n',
+        color: ['#0d6efd', '#333', '#ddd'],
+        skill: ['HTML', 'css', 'Javascript'],
+        src: process.env.PUBLIC_URL + '/assets/img/saltrain.png',
+        link: 'https://syuulee.github.io/lsy_pp2/week_10/',
+        anchor: '솔트레인',
+    },
+    {
+        id: 4,
+        title: '빅마우스',
+        type: 'Web',
+        font: 'Noto Sans Korean, Nanum Myeongjo',
+        info: '드라마 장르인 범죄, 느와르의 분위기를 부각시키기 위하여\n전체 배경색을 검은색으로 디자인 했습니다.\n흰색과 검은색을 사용하여 드라마의 분위기와 통일성을 주려고 했습니다.\n두 가지 폰트를 사용해서 작업했으며, 대비되는 느낌을 주려고 했습니다.',
+        color: ['#000', '#f00', '#ddd', '#f1f1f1'],
+        skill: ['HTML', 'css', 'Javascript'],
+        src: process.env.PUBLIC_URL + '/assets/img/bigmouse.png',
+        link: 'https://syuulee.github.io/lsy_pp/week_11/',
+        anchor: '빅마우스',
+    },
+    {
+        id: 5,
+        title: '더플라자호텔',
+        type: 'Responsive Web',
+        font: 'Noto Sans Korean',
+        info: '브랜드의 원래 로고와 제품 패키지 디자인을\n참고하여, 더 플라자만의 고급스러운 이미지를 느낄 수 있도록\n간결하게 디자인 했습니다.\n전체적으로 무채색을 사용하되, 더 플라자의 색을 사용하여 브랜드의 정체성을 최대한 살려 디자인했습니다.',
+        color: ['#369', '#f00', 'tomato'],
+        skill: ['HTML', 'css', 'JQuery'],
+        src: process.env.PUBLIC_URL + '/assets/img/theplaza.png',
+        link: 'https://syuulee.github.io/lsy_pp2/week_7/',
+        anchor: '더플라자호텔',
+    },
+    {
+        id: 6,
+        title: '오설록',
+        type: 'Web',
+        font: 'Noto Sans Korean',
+        info: '차(Tea)가 주는 차분하고, 평온한 이미지를 담았습니다.\n오설록 브랜드가 가지고 있는 정체성을 모던하면서 깔끔한 느낌을 받을 수 있게 디자인했습니다.\n메인 비주얼에서 제주의 오름 이미지와 간결한 타이포그래피를 사용해서 브랜드의 신뢰성을 표현했습니다.',
+        color: ['#198754', '#333'],
+        skill: ['HTML', 'css', 'JQuery'],
+        src: process.env.PUBLIC_URL + '/assets/img/osulloc.png',
+        link: 'https://syuulee.github.io/lsy_pp2/week_4/',
+        anchor: '오설록',
+    },
+    // {
+    //     id: 7,
+    //     title: '국립발레단',
+    //     type: 'Responsive Web',
+    //     font: 'Noto Sans Korean',
+    //     info: '브랜드의 원래 로고나 제품 패키지 디자인을\n참고하여, 모던하고 딥한 이미지를 고취시킬\n수 있는 다크모드로 디자인 했습니다.\n전체적으로 무채색을 사용하여 브랜드의 정체성을\n드러냈고, 첫번째 섹션은 브랜드만이 가지고 있는\n특이점 이라고 생각해 타이포그라피와 색감을\n이용해 디자인했습니다.',
+    //     color: ['#369', '#f00', 'tomato'],
+    //     skill: ['react', 'react-router-dom', 'axios', 'redux-tollkit'],
+    //     src: process.env.PUBLIC_URL + '/assets/img/ndg.jpg',
+    //     link: 'http://desipossa.github.io/',
+    //     anchor: '국립발레단',
+    // },
 ];
 
-
-export { portfolio }
+export { portfolio };
