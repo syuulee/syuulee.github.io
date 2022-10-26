@@ -196,6 +196,11 @@ const Main = () => {
                                                             </button>
                                                         </a>
                                                     </li>
+                                                    <li className='code'>
+                                                        <a href={it.code}>
+                                                            <button>code</button>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>

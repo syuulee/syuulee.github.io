@@ -17,6 +17,7 @@ const portfolio = [
         skill: ['React', 'react-router-dom'],
         src: process.env.PUBLIC_URL + '/assets/img/knb.png',
         link: 'https://syuulee.github.io/react_task_3/',
+        code: "",
         anchor: '국립발레단',
     },
     {
@@ -29,6 +30,7 @@ const portfolio = [
         skill: ['React'],
         src: process.env.PUBLIC_URL + '/assets/img/asanhospital.png',
         link: 'https://syuulee.github.io/react_tast_2/',
+        code: "",
         anchor: '서울아산병원',
     },
     {
@@ -41,6 +43,7 @@ const portfolio = [
         skill: ['HTML', 'CSS', 'Javascript'],
         src: process.env.PUBLIC_URL + '/assets/img/saltrain.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_10/',
+        code: "",
         anchor: '솔트레인',
     },
     {
@@ -53,6 +56,7 @@ const portfolio = [
         skill: ['HTML', 'CSS', 'Javascript'],
         src: process.env.PUBLIC_URL + '/assets/img/bigmouse.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_11/',
+        code: "",
         anchor: '빅마우스',
     },
     {
@@ -65,6 +69,7 @@ const portfolio = [
         skill: ['HTML', 'CSS', 'JQuery'],
         src: process.env.PUBLIC_URL + '/assets/img/theplaza.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_7/',
+        code: "",
         anchor: '더플라자호텔',
     },
     {
@@ -77,6 +82,7 @@ const portfolio = [
         skill: ['HTML', 'CSS', 'JQuery'],
         src: process.env.PUBLIC_URL + '/assets/img/osulloc.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_4/',
+        code: "",
         anchor: '오설록',
     },
     // {
