@@ -5,6 +5,7 @@ $SubColor: #006600;
 
 html,
 body {
+
     &,
     * {
         cursor: none;
@@ -32,6 +33,20 @@ body {
 
     50% {
         transform: translateY(-1700px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes Smallsliding {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-700px);
     }
 
     100% {
@@ -401,8 +416,7 @@ body {
                             background: $mainColor;
                             opacity: 1;
                             z-index: -12;
-                            transition: all 0.65s
-                                cubic-bezier(0.77, 0, 0.175, 1);
+                            transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
                         }
 
                         &::after {
@@ -416,8 +430,7 @@ body {
                             opacity: 1;
                             top: 0;
                             z-index: -15;
-                            transition: all 0.65s
-                                cubic-bezier(0.77, 0, 0.175, 1);
+                            transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
                         }
                     }
                 }
@@ -593,6 +606,7 @@ body {
         top: 20%;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 101;
 
         h2 {
             font-size: 33px;
@@ -616,7 +630,7 @@ body {
         transform: rotate(-25deg);
         border-radius: 50%;
         font-size: 0;
-        z-index: -1;
+        z-index: 100;
     }
 
     .project_case {
@@ -625,8 +639,39 @@ body {
         gap: 50px;
 
         .project {
+            overflow: hidden;
+
             figure {
-                width: 400px;
+                margin: 0 0 20px 0;
+                height: 300px;
+                overflow: hidden;
+
+                img {
+                    width: 400px;
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+
+            }
+
+            .desc {
+                text-align: center;
+
+                .title {
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin: 0 0 5px 0;
+
+                    .hf_line {
+                        background: linear-gradient(to top, #BBBEFE 50%, transparent 50%);
+                    }
+                }
+
+                .type {
+                    font-size: 15px;
+                }
             }
 
             &:nth-child(2) {

@@ -118,7 +118,6 @@ const Main = () => {
                                 return (
                                     <div className='section section_full'>
                                         <div className='case'>
-                                            {/* {...animatedItem} */}
                                             <div className='container'>
                                                 <div className='photo'>
                                                     <img
@@ -210,38 +209,39 @@ const Main = () => {
                                         <p>Project 모음집</p>
                                     </div>
                                     <span className='ball'>1</span>
-                                    <span className='ball_copy'>2</span>
-                                    <ul className='project_case'>
+                                    <div className='project_case'>
                                         {portfolioSub.map((it) => {
                                             return (
                                                 <div className='project'>
-                                                    <figure>
-                                                        <img
-                                                            src={it.src}
-                                                            alt={it.title}
-                                                        />
-                                                    </figure>
-                                                    <ul className='desc'>
-                                                        <a href={it.link}>
+                                                    <a href={it.link}>
+                                                        <figure>
+                                                            <img
+                                                                src={it.src}
+                                                                alt={it.title}
+                                                            />
+                                                        </figure>
+                                                        <ul className='desc'>
                                                             <li className='title'>
-                                                                {it.title}
+                                                                <span className='hf_line'>{it.title}
+                                                                </span>
                                                             </li>
-                                                        </a>
-                                                        <li className='type'>
-                                                            {it.type}
-                                                        </li>
-                                                    </ul>
+
+                                                            <li className='type'>
+                                                                {it.type}
+                                                            </li>
+                                                        </ul>
+                                                    </a>
                                                 </div>
                                             );
                                         })}
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
                         </ReactFullpage.Wrapper>
                     );
                 }}
             />
-            <svg class='cursor' width='220' height='220' viewBox='0 0 220 220'>
+            {/* <svg svg class='cursor' width='220' height='220' viewBox='0 0 220 220' >
                 <defs>
                     <filter
                         id='filter-1'
@@ -268,9 +268,9 @@ const Main = () => {
                     </filter>
                 </defs>
                 <circle class='cursor__inner' cx='110' cy='110' r='60' />
-            </svg>
+            </svg> */}
             <script src='js/Animate.js'></script>
-        </div>
+        </div >
     );
 };
 
