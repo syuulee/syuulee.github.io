@@ -16,7 +16,7 @@ const portfolio = [
         color: ['#975051', '#333', '#fff'],
         skill: ['React', 'react-router-dom'],
         src: process.env.PUBLIC_URL + '/assets/img/knb.png',
-        link: 'https://syuulee.github.io/react_tast_3/',
+        link: 'https://syuulee.github.io/react_task_3/',
         anchor: '국립발레단',
     },
     {
@@ -52,7 +52,7 @@ const portfolio = [
         color: ['#000', '#f00', '#ddd', '#f1f1f1'],
         skill: ['HTML', 'CSS', 'Javascript'],
         src: process.env.PUBLIC_URL + '/assets/img/bigmouse.png',
-        link: 'https://syuulee.github.io/lsy_pp/week_11/',
+        link: 'https://syuulee.github.io/lsy_pp2/week_11/',
         anchor: '빅마우스',
     },
     {
@@ -73,7 +73,7 @@ const portfolio = [
         type: 'Web',
         font: 'Noto Sans Korean',
         info: '차(Tea)가 주는 차분하고, 평온한 이미지를 담았습니다.\n오설록 브랜드가 가지고 있는 정체성을 모던하면서 깔끔한 느낌을 받을 수 있게 디자인했습니다.\n메인 비주얼에서 제주의 오름 이미지와 간결한 타이포그래피를 사용해서 브랜드의 신뢰성을 표현했습니다.',
-        color: ['#198754', '#333'],
+        color: ['#198754', '#333', ' #ddd', ' #fff'],
         skill: ['HTML', 'CSS', 'JQuery'],
         src: process.env.PUBLIC_URL + '/assets/img/osulloc.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_4/',
