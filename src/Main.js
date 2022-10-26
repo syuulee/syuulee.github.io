@@ -186,20 +186,22 @@ const Main = () => {
                                                             )}
                                                         </ol>
                                                     </li>
-                                                    <li className='link'>
-                                                        <a
-                                                            href={it.link}
-                                                            target='_blank'
-                                                        >
-                                                            <button>
-                                                                view more
-                                                            </button>
-                                                        </a>
-                                                    </li>
-                                                    <li className='code'>
-                                                        <a href={it.code}>
-                                                            <button>code</button>
-                                                        </a>
+                                                    <li className='lincode'>
+                                                        <p className='link'>
+                                                            <a
+                                                                href={it.link}
+                                                                target='_blank'
+                                                            >
+                                                                <button>
+                                                                    view more
+                                                                </button>
+                                                            </a>
+                                                        </p>
+                                                        <p className='code'>
+                                                            <a href={it.code}>
+                                                                <button>code</button>
+                                                            </a>
+                                                        </p>
                                                     </li>
                                                 </ul>
                                             </div>
