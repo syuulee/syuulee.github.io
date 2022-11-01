@@ -53,7 +53,7 @@ const portfolio = [
         font: 'Noto Sans Korean, Nanum Myeongjo',
         info: '드라마 장르인 범죄, 느와르의 분위기를 부각시키기 위하여\n전체 배경색을 검은색으로 디자인 했습니다.\n흰색과 검은색을 사용하여 드라마의 분위기와 통일성을 주려고 했습니다.\n두 가지 폰트를 사용해서 작업했으며, 대비되는 느낌을 주려고 했습니다.',
         color: ['#000', '#f00', '#ddd', '#f1f1f1'],
-        skill: ['HTML', 'CSS', 'Javascript'],
+        skill: ['HTML', 'CSS', 'Javascript', 'JQuery'],
         src: process.env.PUBLIC_URL + '/assets/img/bigmouse.png',
         link: 'https://syuulee.github.io/lsy_pp2/week_11/',
         code: "",
