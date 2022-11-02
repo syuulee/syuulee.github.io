@@ -45,9 +45,9 @@ const Cover = ({ on, setOn }) => {
 };
 
 const Main = () => {
-    const [num, setNum] = useState(1);
+    const [num, setNum] = useState(0);
     const [on, setOn] = useState(false);
-    const animatedItem = useScrollFadeIn();
+    // const animatedItem = useScrollFadeIn();
 
     return (
         <div className='FP'>
@@ -68,13 +68,25 @@ const Main = () => {
                 <ul>
                     {portfolio.map((it, idx) => {
                         return (
-                            <li className={num === idx + 1 ? 'on' : ''}>
+                            <li className={it.id === num ? 'on' : ''}>
                                 <a href={`#${it.anchor}`}>{it.title}</a>
                             </li>
                         );
                     })}
                 </ul>
             </nav>
+            <div className='contact'>
+                <strong className='conway'>Contact</strong>
+                <p className='num'>
+                    <a href=''></a>010-8751-1235
+                </p>
+                <p className='mail'>
+                    <a href=''>yuyu00lee@gmail.com</a>
+                </p>
+                <div className='origin'>
+                    <span className='round'></span>
+                </div>
+            </div>
             <ReactFullpage
                 //fullpage options
                 licenseKey={'YOUR_KEY_HERE'}
@@ -197,11 +209,13 @@ const Main = () => {
                                                                 </button>
                                                             </a>
                                                         </p>
-                                                        <p className='code'>
+                                                        {/* <p className='code'>
                                                             <a href={it.code}>
-                                                                <button>code</button>
+                                                                <button>
+                                                                    code
+                                                                </button>
                                                             </a>
-                                                        </p>
+                                                        </p> */}
                                                     </li>
                                                 </ul>
                                             </div>
@@ -229,7 +243,8 @@ const Main = () => {
                                                         </figure>
                                                         <ul className='desc'>
                                                             <li className='title'>
-                                                                <span className='hf_line'>{it.title}
+                                                                <span className='hf_line'>
+                                                                    {it.title}
                                                                 </span>
                                                             </li>
 
@@ -277,7 +292,7 @@ const Main = () => {
                 <circle class='cursor__inner' cx='110' cy='110' r='60' />
             </svg> */}
             <script src='js/Animate.js'></script>
-        </div >
+        </div>
     );
 };
 

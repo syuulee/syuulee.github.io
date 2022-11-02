@@ -5,7 +5,6 @@ $SubColor: lavender;
 
 html,
 body {
-
     &,
     * {
         cursor: none;
@@ -64,6 +63,15 @@ body {
     }
 }
 
+@keyframes round_round {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 // 헤더 : 왼쪽 타이틀/영문
 .header {
     position: fixed;
@@ -80,6 +88,43 @@ body {
         font-size: 15px;
         font-weight: 500;
         color: #999;
+    }
+}
+.contact {
+    position: fixed;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1000;
+    .conway {
+        display: block;
+        font-size: 17px;
+        margin: 0 0 10px 0;
+        font-weight: 600;
+    }
+    .num {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .mail {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+        background: #fff;
+    }
+    .origin {
+        position: absolute;
+        bottom: 70px;
+        left: 155px;
+        width: 10px;
+        height: 10px;
+        background: $SubColor;
+        border-radius: 50%;
+        animation: round_round 2s linear infinite;
+        transform-origin: 50% 50px;
+        transform: rotate(-45deg);
+        z-index: -1;
     }
 }
 
@@ -284,7 +329,6 @@ body {
             }
         }
     }
-
     .section {
         .case {
             overflow: hidden;
@@ -419,7 +463,8 @@ body {
                                 background: $mainColor;
                                 opacity: 1;
                                 z-index: -12;
-                                transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+                                transition: all 0.65s
+                                    cubic-bezier(0.77, 0, 0.175, 1);
                             }
 
                             &::after {
@@ -433,7 +478,8 @@ body {
                                 opacity: 1;
                                 top: 0;
                                 z-index: -15;
-                                transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+                                transition: all 0.65s
+                                    cubic-bezier(0.77, 0, 0.175, 1);
                             }
                         }
                     }
@@ -480,7 +526,8 @@ body {
                                 background: $mainColor;
                                 opacity: 1;
                                 z-index: -12;
-                                transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+                                transition: all 0.65s
+                                    cubic-bezier(0.77, 0, 0.175, 1);
                             }
 
                             &::after {
@@ -494,7 +541,8 @@ body {
                                 opacity: 1;
                                 top: 0;
                                 z-index: -15;
-                                transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+                                transition: all 0.65s
+                                    cubic-bezier(0.77, 0, 0.175, 1);
                             }
                         }
                     }
@@ -719,7 +767,6 @@ body {
                         display: none;
                     }
                 }
-
             }
 
             .desc {
@@ -731,7 +778,11 @@ body {
                     margin: 0 0 5px 0;
 
                     .hf_line {
-                        background: linear-gradient(to top, #BBBEFE 50%, transparent 50%);
+                        background: linear-gradient(
+                            to top,
+                            #bbbefe 50%,
+                            transparent 50%
+                        );
                     }
                 }
 
