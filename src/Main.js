@@ -88,7 +88,8 @@ const Main = () => {
                 </div>
             </div>
             <ReactFullpage
-                //fullpage options
+                //fullpage options                   -
+
                 licenseKey={'YOUR_KEY_HERE'}
                 scrollingSpeed={1000} /* Options here */
                 anchors={['cover', ...ac, 'footer']}
