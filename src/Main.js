@@ -68,7 +68,7 @@ const Main = () => {
                 <ul>
                     {portfolio.map((it, idx) => {
                         return (
-                            <li className={it.id === num ? 'on' : ''}>
+                            <li className={it.id === num - 1 ? 'on' : ''}>
                                 <a href={`#${it.anchor}`}>{it.title}</a>
                             </li>
                         );

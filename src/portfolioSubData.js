@@ -28,7 +28,7 @@ const portfolioSub = [
         title: '현대엘리베이터 클론코딩',
         type: 'React Web',
         src: process.env.PUBLIC_URL + '/assets/img/hde_react.png',
-        link: 'https://syuulee.github.io/lsy_pp2/HDE_web_jq/',
+        link: 'https://syuulee.github.io/HDE_web_react/',
     },
 
     {
@@ -36,7 +36,7 @@ const portfolioSub = [
         title: '현대엘리베이터 클론코딩',
         type: 'Javascript Web',
         src: process.env.PUBLIC_URL + '/assets/img/hde_js.png',
-        link: 'http://desipossa.github.io/',
+        link: 'https://syuulee.github.io/lsy_pp2/HDE_web_javascript/',
     },
 
     {
@@ -44,7 +44,7 @@ const portfolioSub = [
         title: '현대엘리베이터 클론코딩',
         type: 'JQuery Web',
         src: process.env.PUBLIC_URL + '/assets/img/hde_jq.png',
-        link: 'https://syuulee.github.io/HDE_web_react/',
+        link: 'https://syuulee.github.io/lsy_pp2/HDE_web_jq/',
     },
 ];
 
